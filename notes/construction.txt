@@ -1,10 +1,10 @@
-// If a struct has all it's members set as default values, or the member types themselves have defaults, the programmer can just use the default() keyword
+// If a struct has all it's members set as default values, or the member types themselves have defaults, the type will automatically implement the Default trait.
 
 struct Example {
     val1: u32 = 10;
     val2: u32 = 20;
 }
 
-let var = default(Example);
+let var = Example.default();
 assertEq(var.val1, 10);
 assertEq(var.val2, 20);
