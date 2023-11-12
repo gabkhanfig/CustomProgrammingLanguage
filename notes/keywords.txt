@@ -1,0 +1,23 @@
+let = variable declaration -> let someVar
+mut = used with let -> let mut someVar
+return = yeah
+struct = struct/class holding some data
+trait = similar to rust trait. Any struct implementing a trait does NOT cause the struct to store the vtable in place. See "dyn" keyword
+enum = type with variants. Can be used with union for tagged union -> enum union. Still has the same semantics as enums for switching
+union = type with untagged sub-type variants. Accessing the variants is considered unsafe because it is untagged
+if = yeah
+else = else condition. In for and while loops, executes if the loop does NOT execute.
+while = yeah
+for = iterate over iterator. for i in 0..<1000 {} OR for i in 0..=1000 {} OR for value, i in collection {}. In the third example, value is in the iterator, and i is a numerical counter
+in = used with for. See above
+switch = switch on a value, or enum. For enums, all variants or a default MUST be present.
+break = break out of a loop
+continue = go to the next iteration in a loop, or end it.
+void = empty value. Similar to rust unit type
+dyn = trait object on the heap, and trait vtable
+comptime = forced compile time evaluation of code
+pub = the struct, struct member, or function can be accessed anywhere where its in scope (see "use" keyword). Arguments can be passed in as "pub(args)". TODO figure out visibility rules
+use = bring a module/directory into scope. Using a raw string path will require the use of as, including with c headers.
+super = combined with use/pub, meaning parent module/directory
+as = aliasing for one of the following; A type, or a use declaration
+unsafe = execute code that is considered unsafe by the compiler, such as pointer casting, or accessing raw union fields. Unsafe can be done at comptime
