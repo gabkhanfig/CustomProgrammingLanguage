@@ -21,3 +21,4 @@ use = bring a module/directory into scope. Using a raw string path will require 
 super = combined with use/pub, meaning parent module/directory
 as = aliasing for one of the following; A type, or a use declaration
 unsafe = execute code that is considered unsafe by the compiler, such as pointer casting, or accessing raw union fields. Unsafe can be done at comptime
+default() = given member defaults of a type, constructs a default version of the type. Will give a compiler error if the type does not have a default

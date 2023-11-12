@@ -1,0 +1,10 @@
+// If a struct has all it's members set as default values, or the member types themselves have defaults, the programmer can just use the default() keyword
+
+struct Example {
+    val1: u32 = 10;
+    val2: u32 = 20;
+}
+
+let var = default(Example);
+assertEq(var.val1, 10);
+assertEq(var.val2, 20);
